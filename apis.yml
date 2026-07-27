@@ -1,8 +1,25 @@
 aid: flosports
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flosports.png
 name: FloSports
-description: 'FloSports is a company surfaced as a portfolio company of dcm-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'FloSports is an Austin, Texas-based direct-to-consumer sports media and live-streaming
+  company founded in 2006 by brothers Martin and Mark Floreani. It operates a network of vertical
+  properties (FloWrestling, FloTrack, FloGrappling, FloRacing, FloHockey, FloRugby, FloFootball and
+  more) that deliver live and on-demand event streaming, original programming, news, rankings, and
+  results for underserved and passionate sports communities through a subscription model. FloSports
+  surfaced in the API Evangelist network as a portfolio company of dcm-ventures; enrichment probing
+  found a consumer streaming site with no public developer API, developer portal, OpenAPI, well-known
+  discovery documents, or SDK program at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/flosports/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Media
+- Streaming
+- Sports
+- Video
+- Entertainment
+- Subscription
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/flosports-domain-security.yml
 - type: Website
-  url: http://www.flosports.tv/
+  url: https://www.flosports.tv/
+- type: Support
+  name: FloSports Help Center
+  url: https://support.flosports.tv/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
